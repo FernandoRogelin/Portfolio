@@ -1,13 +1,16 @@
-# Astro + React Example
+# Fernando Rogelin - Portfolio
 
-```sh
-npm create astro@latest -- --template framework-react
-```
+This is the code of my portfolio, I doed with a lot of love
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/framework-react/devcontainer.json)
+The principal goal is to show my Skills like Front-end Engineer
 
-This example showcases Astro working with [React](https://react.dev).
+## Node
 
-Write your React components as `.jsx` or `.tsx` files in your project.
+Astro only runs with the version 18.14.1 or higher
+
+## Tecnologies
+
+- [Astro](https://astro.build/)
+- [React](https://react.dev/)
+- [Saas](https://sass-lang.com/)
+- [Netlify](https://www.netlify.com/)
