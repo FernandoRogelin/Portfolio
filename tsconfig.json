@@ -9,7 +9,6 @@
     "module": "esnext",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
     "skipLibCheck": true,
     "jsxImportSource": "react"
   },
