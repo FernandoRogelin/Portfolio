@@ -1,3 +1,5 @@
+@import './colors';
+
 :root {
   font-size: 62.5%;
 }
@@ -10,6 +12,7 @@
 
 html,
 body {
+  background-color: $primary;
   font-family: 'Manrope Variable', sans-serif;
 }
 
