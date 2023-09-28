@@ -1,6 +1,8 @@
 ---
 import '@fontsource-variable/manrope';
 import '../styles/global.scss';
+
+import Menu from '../components/Menu'
 ---
 
 <html lang="en">
@@ -13,7 +15,9 @@ import '../styles/global.scss';
 	</head>
 	<body>
 		<main>
-      <p>testando ainda o CSS calma</p>
+      <div class="wrapper">
+        <Menu client:visible />
+      </div>
 		</main>
 	</body>
 </html>
