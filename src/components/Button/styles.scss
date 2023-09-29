@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+.button {
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 1rem 2.2rem;
+  background: linear-gradient(90deg, #4C96D4, #4A27CC);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid $rhino;
+}
