@@ -6,8 +6,8 @@ import Logo from '../../assets/images/logo-preview.png';
 
 export default function Menu() {
   return (
-    <header className="header">
-      <img className="header__logo" src={Logo.src} alt="logo" />
+    <header className="menu">
+      <img className="menu__logo" src={Logo.src} alt="logo" />
       <ul className="list">
         {options.map((option, index) =>
           <li key={index} className="list__item">{option.name}</li>

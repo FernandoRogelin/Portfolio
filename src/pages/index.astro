@@ -2,7 +2,8 @@
 import '@fontsource-variable/manrope';
 import '../styles/global.scss';
 
-import Menu from '../components/Menu'
+import Menu from '../components/Menu';
+import Header from '../layouts/Header';
 ---
 
 <html lang="en">
@@ -17,6 +18,7 @@ import Menu from '../components/Menu'
 		<main>
       <div class="wrapper">
         <Menu client:visible />
+        <Header client:visible />
       </div>
 		</main>
 	</body>
