@@ -1,15 +1,23 @@
 @import '../../styles/colors';
 
-.menu {
+.content {
   top: 0;
-  display: flex;
+  z-index: 10;
   position: sticky;
-  padding-top: 3rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.menu {
+  display: flex;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  max-width: 120rem;
+  position: relative;
   justify-content: flex-end;
 
   &__logo {
     left: 0;
-    top: 2rem;
+    top: 0.5rem;
     width: 6rem;
     height: 6rem;
     position: absolute;
@@ -32,4 +40,9 @@
       color: $shakespeare;
     }
   }
+}
+
+.scroll {
+  background: #031226;
+  transition: background 0.3s ease-in-out;
 }
