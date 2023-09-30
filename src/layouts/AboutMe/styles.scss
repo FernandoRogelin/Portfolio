@@ -44,3 +44,22 @@
     font-size: 1.4rem;
   }
 }
+
+.details {
+  display: grid;
+  row-gap: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  padding: 1rem 0.8rem;
+  border: 1px solid $shakespeare;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__label {
+    color: $white;
+    font-size: 1.4rem;
+  }
+
+  &__span {
+    font-weight: 600;
+  }
+}

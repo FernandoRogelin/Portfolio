@@ -10,11 +10,37 @@ const AboutMe = () => {
       <div className='aboutme'>
         <h3 className='aboutme__title'>About Me</h3>
         <p className='aboutme__text'>
-          Sejam bem-vindos ao meu portfolio, atualmente estou trabalhando como Senior Front-end Engineer e tenho 6+ anos de experiência na área.
+          Meu nome é Fernando Rogelin, sou desenvolvedor front-end 6+ anos, desde que comecei na área
+          de desenvolvimento eu atuo nessa área, atualmente estou morando em Guaíba - RS, uma cidade ao lado
+          de Porto Alegre.
         </p>
         <p className='aboutme__text'>
-          Sou apaixonado pela área de Front-end (as vezes estudo um pouco Back-end também) então costumo estudar bastante sobre e ficar sempre se atualizando sobre as novidades que estão surgindo, até por que na área de desenvolvimento, sempre tem algo novo para estudar.
+          Sou apaixonado pela área de Front (as vezes estudo um pouco Back-end também), então costumo estudar
+          bastante sobre e sempre se atualizando sobre as novidades que estão surgindo. Já fiz projetos de
+          Internet Banking, Painel administrativos, Portfolio de Investimentos, entra vários outros.
         </p>
+        <p className='aboutme__text'>
+          No meu tempo livre, gosto bastante de sair com os meus amigos e minha família para conversar, trocar
+          uma idéia, também gosto bastante de praticar esporte, adoro ir na academia e jogar futebol.
+        </p>
+        <div className='details'>
+          <label className='details__label'>
+            Idade:
+            <span className='details__span'>26</span>
+          </label>
+          <label className='details__label'>
+            Endereço:
+            <span className='details__span'>Guaíba/Porto Alegre - RS</span>
+          </label>
+          <label className='details__label'>
+            Experiência:
+            <span className='details__span'>6 Anos</span>
+          </label>
+          <label className='details__label'>
+            Cargo:
+            <span className='details__span'>Front-end Engineer</span>
+          </label>
+        </div>
       </div>
     </div>
   )
