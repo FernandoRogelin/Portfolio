@@ -30,7 +30,7 @@ const AboutMe = () => {
           </label>
           <label className='details__label'>
             Endereço:
-            <span className='details__span'>Guaíba/Porto Alegre - RS</span>
+            <span className='details__span'>Porto Alegre/RS</span>
           </label>
           <label className='details__label'>
             Experiência:

@@ -1,9 +1,17 @@
 @import '../../styles/colors';
+@import '../../styles/media';
 
 .about {
   display: flex;
   column-gap: 4rem;
   padding-top: 4rem;
+  align-items: center;
+  flex-direction: column;
+
+  @include devices() {
+    flex-direction: row;
+    align-items: normal;
+  }
 }
 
 .perfil {
@@ -51,8 +59,12 @@
   margin-top: 1rem;
   border-radius: 3px;
   padding: 1rem 0.8rem;
+  grid-template-columns: 1fr;
   border: 1px solid $shakespeare;
-  grid-template-columns: repeat(2, 1fr);
+
+  @include devices() {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &__label {
     color: $white;

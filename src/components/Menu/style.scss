@@ -1,4 +1,5 @@
 @import '../../styles/colors';
+@import '../../styles/media';
 
 .content {
   top: 0;
@@ -10,25 +11,29 @@
 .menu {
   display: flex;
   margin: 0 auto;
-  padding: 1.5rem 0;
-  max-width: 120rem;
+  max-width: 128rem;
   position: relative;
+  padding: 1.5rem 4rem;
   justify-content: flex-end;
 
   &__logo {
-    left: 0;
     top: 0.5rem;
     width: 6rem;
+    left: 1.5rem;
     height: 6rem;
     position: absolute;
   }
 }
 
 .list {
-  display: flex;
+  display: none;
   column-gap: 3rem;
   align-items: center;
   list-style-type: none;
+
+  @include devices() {
+    display: flex;
+  }
 
   &__item {
     color: $white;
