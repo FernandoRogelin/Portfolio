@@ -8,11 +8,21 @@
   transition: background 0.3s ease-in-out;
 }
 
+@mixin hamburguer() {
+  content: '';
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  background-color: $white;
+}
+
 .menu {
+  height: 71px;
   display: flex;
   margin: 0 auto;
   max-width: 128rem;
   position: relative;
+  align-items: center;
   padding: 1.5rem 4rem;
   justify-content: flex-end;
 
@@ -22,6 +32,28 @@
     left: 1.5rem;
     height: 6rem;
     position: absolute;
+  }
+
+  &__hamburguer {
+    width: 25px;
+    height: 2px;
+    position: relative;
+    border-radius: 1rem;
+    background-color: $white;
+
+    @include devices() {
+      display: none;
+    }
+
+    &::after {
+      bottom: 7px;
+      @include hamburguer();
+    }
+
+    &::before {
+      top: 7px;
+      @include hamburguer();
+    }
   }
 }
 
@@ -50,4 +82,30 @@
 .scroll {
   background: #031226;
   transition: background 0.3s ease-in-out;
+}
+
+.listMobile {
+  left: 50%;
+  top: 76px;
+  width: 90%;
+  padding: 0 2rem;
+  position: absolute;
+  list-style-type: none;
+  background-color: #031226;
+  transform: translate(-50%, 0);
+
+  @include devices() {
+    display: none;
+  }
+
+  &__item {
+    color: $white;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $shakespeare;
+    }
+  }
 }

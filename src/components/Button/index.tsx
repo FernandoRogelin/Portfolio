@@ -5,6 +5,7 @@ import type { ButtonProps } from './types';
 
 export default function Button({
   children,
+  fullWidth = false,
   secondary = false,
   uppercase = false
 }: ButtonProps) {
@@ -13,6 +14,7 @@ export default function Button({
       button: true,
       secondary,
       uppercase,
+      fullWidth,
     })}>{children}</button>
   )
 }

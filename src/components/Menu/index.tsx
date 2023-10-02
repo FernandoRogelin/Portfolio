@@ -8,6 +8,7 @@ import Logo from '../../assets/images/logo-preview.png';
 
 export default function Menu() {
   const [scroll, setScroll] = useState(false)
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false)
 
   function listenScrollEvent() {
     window.scrollY < 20 ? setScroll(false) : setScroll(true)
@@ -33,7 +34,23 @@ export default function Menu() {
             <Button uppercase>contact</Button>
           </li>
         </ul>
+
+        <div
+          className='menu__hamburguer'
+          onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+        />
       </div>
+
+      {isOpenMobileMenu && (
+        <ul className='listMobile'>
+          {options.map((option, index) =>
+            <li key={index} className="listMobile__item">{option.name}</li>
+          )}
+          <li className="listMobile__item">
+            <Button uppercase fullWidth>contact</Button>
+          </li>
+        </ul>
+      )}
     </header>
   );
 }
