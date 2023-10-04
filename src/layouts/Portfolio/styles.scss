@@ -1,0 +1,30 @@
+@import '../../styles/colors';
+@import '../../styles/media';
+
+.portfolio {
+  margin-top: 8rem;
+
+  &__title {
+    color: $white;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.screens {
+  display: flex;
+  margin-top: 2rem;
+  column-gap: 5rem;
+  justify-content: center;
+
+  &__option {
+    color: $white;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+}
+
+.selected {
+  color: $shakespeare;
+}
