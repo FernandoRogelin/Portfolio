@@ -1,0 +1,73 @@
+@import '../../styles/colors';
+@import '../../styles/media';
+
+.project {
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  @include devices() {
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-between;
+  }
+}
+
+.information {
+  &__title {
+    color: $white;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    color: #555A6D;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+.picture {
+  position: relative;
+
+  &__photo {
+    top: -3rem;
+    left: 3rem;
+    width: 25rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/perfil.jpg');
+
+    @include devices() {
+      width: 30rem;
+      height: 22rem;
+    }
+  }
+
+  &__frame {
+    width: 25rem;
+    height: 20rem;
+    margin-right: 3rem;
+    border-radius: 5px;
+    border: 8px solid $shakespeare;
+
+    @include devices() {
+      width: 30rem;
+      height: 22rem;
+    }
+  }
+}
+
+.invert {
+  @include devices() {
+    flex-direction: row-reverse;
+  }
+}
