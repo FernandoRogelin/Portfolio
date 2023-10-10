@@ -1,7 +1,7 @@
 import './styles.scss';
 
 import Block from 'components/Block';
-import { RiComputerLine, RiHtml5Line } from 'react-icons/ri'
+import { RiComputerLine, RiCodeSSlashLine } from 'react-icons/ri'
 
 const Services = () => {
   return (
@@ -14,7 +14,7 @@ const Services = () => {
           tipográfica e de impressos, e vem sendo utilizado desde o século
           XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
         </Block>
-        <Block title='Website' icon={RiHtml5Line}>
+        <Block title='Website' icon={RiCodeSSlashLine}>
           Lorem Ipsum é simplesmente uma simulação de texto da indústria
           tipográfica e de impressos, e vem sendo utilizado desde o século
           XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
