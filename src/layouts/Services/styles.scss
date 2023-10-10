@@ -12,3 +12,13 @@
     text-transform: uppercase;
   }
 }
+
+.development {
+  gap: 2rem;
+  display: grid;
+
+  @include devices() {
+    gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

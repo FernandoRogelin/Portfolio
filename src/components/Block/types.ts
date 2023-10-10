@@ -1,8 +1,8 @@
 import type { ComponentPropsWithoutRef } from "react"
 
-export type BlockProps = {
-  type: Type
-  title: string
-} & ComponentPropsWithoutRef<'p'>
+import type { IconType } from 'react-icons'
 
-type Type = 'development' | 'desktop'
+export type BlockProps = {
+  title: string
+  icon: IconType
+} & ComponentPropsWithoutRef<'p'>
