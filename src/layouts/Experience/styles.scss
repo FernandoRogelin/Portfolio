@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+@import '../../styles/media';
+
+.experience {
+  margin-top: 10rem;
+
+  &__title {
+    color: $white;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.wrapperIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem 10rem;
+  justify-content: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
