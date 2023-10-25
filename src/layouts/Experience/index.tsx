@@ -12,8 +12,8 @@ const Experience = () => {
           <div key={index} className='logos'>
             <img
               title={logo.title}
-              alt={`${logo.title}-logo`}
               className='logos__icon'
+              alt={`${logo.title}-logo`}
               src={`src/assets/icons/${logo.path}`}
             />
             <p className='logos__title'>{logo.title}</p>
