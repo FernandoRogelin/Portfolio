@@ -1,16 +1,87 @@
 @import '../../styles/colors';
 @import '../../styles/media';
 
-.contact {
+.wrapperContact {
   margin-top: 10rem;
-  padding: 2rem 14rem 0;
+  position: relative;
+  padding: 2rem 10rem 0;
   border-radius: 100px 100px 0 0;
   background: linear-gradient(90deg, #4A27CC, #4C96D4);
+}
+
+.contact {
+  margin: 0 auto;
+  max-width: 128rem;
 
   &__title {
     color: $white;
     font-size: 1.8rem;
     text-align: center;
+    margin-bottom: 2rem;
     text-transform: uppercase;
   }
+
+  &__drop {
+    color: $white;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: #8386ED;
+    max-width: 50rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.info {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    display: flex;
+    width: 4.5rem;
+    height: 4.5rem;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: center;
+    background: linear-gradient(115deg, #4C96D4, #4A27CC);
+
+    & > svg {
+      color: $white;
+    }
+  }
+
+  &__value {
+    color: $white;
+    font-size: 1.4rem;
+  }
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  position: relative;
+  justify-content: flex-end;
+  border-top: 1px solid #6169DB;
+
+  &__logo {
+    left: 0;
+    top: 12px;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+  }
+}
+
+.socialNetwork {
+  display: flex;
+  column-gap: 1rem;
 }
