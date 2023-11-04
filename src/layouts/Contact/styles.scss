@@ -4,9 +4,13 @@
 .wrapperContact {
   margin-top: 10rem;
   position: relative;
-  padding: 2rem 10rem 0;
+  padding: 2rem 4rem 0;
   border-radius: 100px 100px 0 0;
   background: linear-gradient(90deg, #4A27CC, #4C96D4);
+
+  @include devices() {
+    padding: 2rem 10rem 0;
+  }
 }
 
 .contact {
@@ -66,11 +70,16 @@
 
 .footer {
   display: flex;
-  padding: 2rem 0;
   margin-top: 3rem;
   position: relative;
-  justify-content: flex-end;
-  border-top: 1px solid #6169DB;
+  padding: 8rem 0 2rem;
+  justify-content: center;
+  border-top: 1px solid $white;
+
+  @include devices() {
+    padding: 2rem 0;
+    justify-content: flex-end;
+  }
 
   &__logo {
     left: 0;

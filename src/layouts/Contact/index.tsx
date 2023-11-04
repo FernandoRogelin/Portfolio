@@ -1,9 +1,9 @@
 import './styles.scss';
 
+import links from './links';
 import { CiLocationOn } from 'react-icons/ci'
 import { MdOutlineMail } from 'react-icons/md'
 import Logo from '../../assets/images/logo-preview.png';
-import { BsLinkedin, BsSteam, BsGithub, BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs'
 
 const Contact = () => {
   return (
@@ -35,24 +35,13 @@ const Contact = () => {
           <img className="footer__logo" src={Logo.src} alt="logo" />
 
           <div className='socialNetwork'>
-            <div className='info__icon'>
-              <BsLinkedin size={25} />
-            </div>
-            <div className='info__icon'>
-              <BsGithub size={25} />
-            </div>
-            <div className='info__icon'>
-              <BsTwitter size={25} />
-            </div>
-            <div className='info__icon'>
-              <BsInstagram size={25} />
-            </div>
-            <div className='info__icon'>
-              <BsFacebook size={25} />
-            </div>
-            <div className='info__icon'>
-              <BsSteam size={25} />
-            </div>
+            {links.map(({ link, icon: Icon }, index) => (
+              <a key={index} target='_blank' href={link}>
+                <div className='info__icon'>
+                  <Icon size={25} />
+                </div>
+              </a>
+            ))}
           </div>
         </footer>
       </div>
