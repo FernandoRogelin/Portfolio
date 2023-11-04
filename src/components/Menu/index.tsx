@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './style.scss'
 
 import options from './options';
+import { Link, animateScroll } from 'react-scroll'
 import classNames from 'classnames';
 import Button from 'components/Button';
 import Logo from '../../assets/images/logo-preview.png';
@@ -25,14 +26,23 @@ export default function Menu() {
   return (
     <header className={classNames({ content: true, scroll })}>
       <div className='menu'>
-        <img className="menu__logo" src={Logo.src} alt="logo" />
+        <img
+          alt="logo"
+          src={Logo.src}
+          className="menu__logo"
+          onClick={() => animateScroll.scrollToTop()}
+        />
         <ul className="list">
           {options.map((option, index) =>
-            <li key={index} className="list__item">{option.name}</li>
+            <Link key={index} to={option.name} smooth offset={-100}>
+              <li className="list__item">{option.name}</li>
+            </Link>
           )}
-          <li>
-            <Button uppercase>contact</Button>
-          </li>
+          <Link to='contact' smooth offset={-100}>
+            <li>
+              <Button uppercase>contact</Button>
+            </li>
+          </Link>
         </ul>
 
         <div
@@ -44,11 +54,21 @@ export default function Menu() {
       {isOpenMobileMenu && (
         <ul className='listMobile'>
           {options.map((option, index) =>
-            <li key={index} className="listMobile__item">{option.name}</li>
+            <Link
+              smooth
+              key={index}
+              offset={-100}
+              to={option.name}
+              onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+            >
+              <li className="listMobile__item">{option.name}</li>
+            </Link>
           )}
-          <li className="listMobile__item">
-            <Button uppercase fullWidth>contact</Button>
-          </li>
+          <Link to='contact' smooth offset={-100} onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}>
+            <li className="listMobile__item">
+              <Button uppercase fullWidth>contact</Button>
+            </li>
+          </Link>
         </ul>
       )}
     </header>
