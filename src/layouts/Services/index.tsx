@@ -9,15 +9,15 @@ const Services = () => {
       <h1 className='services__title'>Serviços</h1>
 
       <div className='development'>
-        <Block title='Desktop app' icon={RiComputerLine}>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria
-          tipográfica e de impressos, e vem sendo utilizado desde o século
-          XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
-        </Block>
         <Block title='Website' icon={RiCodeSSlashLine}>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria
-          tipográfica e de impressos, e vem sendo utilizado desde o século
-          XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
+          É uma coleção de páginas da Web organizadas e localizadas em um
+          servidor na rede. Um website pode tratar de diversos assunstos e
+          disponibilizam as informações em forma de conteúdo de texto e mídia.
+        </Block>
+        <Block title='Desktop app' icon={RiComputerLine}>
+          Aplicativos desktop são aplicações que são instaladas e, em sua maioria,
+          roda no computador desktop ou laptop. Também são aplicações que podem ser
+          executadas em dispositivos portáteis como telefones, tablets e outros.
         </Block>
       </div>
     </div>
