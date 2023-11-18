@@ -1,14 +1,14 @@
 export default [
   {
-    name: 'about me'
+    name: 'Sobre mim'
   },
   {
-    name: 'portfolio'
+    name: 'Portfolio'
   },
   {
-    name: 'services'
+    name: 'Serviços'
   },
   {
-    name: 'experience'
+    name: 'Experiências'
   },
 ]

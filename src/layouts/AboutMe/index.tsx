@@ -2,13 +2,13 @@ import './styles.scss';
 
 const AboutMe = () => {
   return (
-    <div className='about' id='about me'>
+    <div className='about' id='Sobre mim'>
       <div className='perfil'>
         <div className='perfil__photo' />
         <div className='perfil__frame' />
       </div>
       <div className='aboutme'>
-        <h3 className='aboutme__title'>About Me</h3>
+        <h3 className='aboutme__title'>Sobre mim</h3>
         <p className='aboutme__text'>
           Meu nome é Fernando Rogelin, sou desenvolvedor front-end 6+ anos, desde que comecei na área
           de desenvolvimento eu atuo nessa área, atualmente estou morando em Guaíba - RS, uma cidade ao lado

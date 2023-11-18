@@ -40,7 +40,7 @@ export default function Menu() {
           )}
           <Link to='contact' smooth offset={-100}>
             <li>
-              <Button uppercase>contact</Button>
+              <Button uppercase>Contato</Button>
             </li>
           </Link>
         </ul>

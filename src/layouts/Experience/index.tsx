@@ -4,8 +4,8 @@ import logos from './logos.ts'
 
 const Experience = () => {
   return (
-    <div className='experience'>
-      <h1 className='services__title'>Experience</h1>
+    <div className='experience' id='Experiências'>
+      <h1 className='services__title'>Experiências</h1>
 
       <div className='wrapperIcons'>
         {logos.map((logo, index) => (

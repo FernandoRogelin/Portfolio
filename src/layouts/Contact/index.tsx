@@ -7,9 +7,9 @@ import Logo from '../../assets/images/logo-preview.png';
 
 const Contact = () => {
   return (
-    <div className='wrapperContact'>
+    <div className='wrapperContact' id='Contato'>
       <div className='contact'>
-        <h1 className='contact__title'>Contact</h1>
+        <h1 className='contact__title'>Contato</h1>
 
         <h2 className='contact__drop'>Deixe uma mensagem</h2>
         <p className='contact__text'>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou</p>
