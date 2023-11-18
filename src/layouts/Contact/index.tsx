@@ -12,7 +12,11 @@ const Contact = () => {
         <h1 className='contact__title'>Contato</h1>
 
         <h2 className='contact__drop'>Deixe uma mensagem</h2>
-        <p className='contact__text'>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou</p>
+        <p className='contact__text'>
+          Se gostou do meu trabalho e quer entrar em contato comigo,
+          mande um e-mail para mim que assim que possível eu irei responder e
+          marcamos uma call para conversar.
+        </p>
 
         <div>
           <div className='info'>
