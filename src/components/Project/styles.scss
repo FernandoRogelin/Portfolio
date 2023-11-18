@@ -30,6 +30,16 @@
     margin-top: 1rem;
     font-size: 1.4rem;
   }
+
+  &__technologies {
+    color: $comet;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+
+  &__frameworks {
+    color: $shakespeare;
+  }
 }
 
 .picture {
@@ -43,8 +53,8 @@
     position: absolute;
     border-radius: 5px;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../assets/images/perfil.jpg');
 
     @include devices() {
       width: 30rem;

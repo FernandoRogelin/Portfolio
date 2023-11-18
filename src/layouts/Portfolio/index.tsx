@@ -10,11 +10,11 @@ const Portfolio = () => {
   const [screens, setScreens] = useState<Screens>('website');
 
   function showScreens() {
-    const teste = {
+    const components = {
       [EScreens.website]: <Website />,
       [EScreens.desktop]: <Desktop />
     }
-    return teste[screens]
+    return components[screens]
   }
 
   return (

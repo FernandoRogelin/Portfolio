@@ -1,7 +1,8 @@
-import type { ComponentPropsWithRef } from "react"
+import type { ComponentPropsWithoutRef } from "react"
 
 export type ProjectProps = {
   title: string
   photo: string
   invert?: boolean
-} & ComponentPropsWithRef<'div'>
+  technologies?: string
+} & ComponentPropsWithoutRef<'div'>

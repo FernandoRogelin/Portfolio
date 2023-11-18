@@ -6,15 +6,18 @@ import Project from 'components/Project';
 const Desktop = () => {
   return (
     <div className='desktop'>
-      <Project title='Dating Mobile App Design' photo='testando'>
-        Lorem Ipsum é simplesmente uma simulação de texto da indústria
-        tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
-        quando um impressor desconhecido pegou uma bandeja de tipos e os
-        embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu
-        não só a cinco séculos, como também ao salto para a editoração eletrônica,
-        permanecendo essencialmente inalterado. Se popularizou na década de 60, quando
-        a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente
-        quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+      <Project
+        title='VistoriaPro'
+        photo='vistoriapro.png'
+        technologies='ASP.NET Core, .NET e C#'
+      >
+        O VistoriaPro é um software de gestão para empresas de vistoria
+        e inspeção veicular, desenvolvido para automatizar todo processo,
+        desde a ordem de serviço, até a emissão do laudo. Possui relatórios
+        detalhados, que podem ser acessados via web, pela área administrativa
+        do sistema. Simples e intuitivo, o sistema auxilia em todas as
+        atividades, garantindo que o fluxo de vistoria e inspeção seja feito
+        com maior agilidade e segurança.
       </Project>
     </div>
   )
