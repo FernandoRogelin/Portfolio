@@ -7,30 +7,30 @@ const Website = () => (
   <div className='website'>
     <Project
       photo='leste.png'
-      title='Site Leste'
+      title='Plataforma de investimentos website'
       technologies='React, Gatsby, Vitest, Clean Arquitecture, TypeScript, Styled-components e i18n'
     >
-      Website que foi criado para a empresa Leste, que é uma plataforma de
+      Website que foi criado para uma empresa, que é uma plataforma de
       investimentos alternativos global, com um DNA brasileiro, neste website
       são mostrados todas as informções referente a empresa, a equipe que
       trabalha na empresa, como entrar em contato com os mesmos, suas
-      estratégias de investimentos e em quais fundos a empresa investe. A empresa
-      possue sede em várias regiões pelo mundo, como Miami, Nova Iorque, Rio de Janeiro,
-      São Paulo e Bogotá.
+      estratégias de investimentos e em quais fundos a empresa investe. O site também é
+      responsivo, o que significa que ele pode ser visualizado em dispositivos móveis e
+      tablets.
     </Project>
 
     <Project
       invert
-      title='Deskbee'
+      title='Plataforma de gerenciamento trabalho híbrido'
       photo='deskbee.png'
       technologies='Vue, PWA, i18n, Testes, Atomic Design, CSS (BEM), TypeScript, Storybook e Quasar'
     >
-      Uma plataforma para os colaboradores de uma empresa que está trabalhando atualmente
-      como híbrido, consigam fazer suas reservas de lugares no prédio em que trabalham quando
-      precisam ir presencial, assim os colaboradores sabem quando forem para a empresa
-      quantos lugares ainda tem disponíveis para serem usados. A plataforma é um PWA, então
-      pode ser acessada através de uma URL no browser e transformar ela em um aplicativo no seu
-      celular.
+      É uma plataforma de gerenciamento de espaços de trabalho e trabalho híbrido que
+      ajuda empresas de todos os tamanhos a otimizar seus escritórios e melhorar a experiência de
+      seus funcionários. A plataforma oferece uma ampla gama de recursos, incluindo: Reserva de
+      espaços, gerenciamento de chamados, gestão de eventos, gestão de convidados, controle de
+      acesso, além de uma gama de reletórios e análises que ajudam os gerentes a entender como
+      os espaços de trabalho estão sendo utilizados.
     </Project>
 
     <Project

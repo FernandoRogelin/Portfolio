@@ -7,17 +7,17 @@ const Desktop = () => {
   return (
     <div className='desktop'>
       <Project
-        title='VistoriaPro'
+        title='Plataforma de gestão para empresas de vistoria'
         photo='vistoriapro.png'
-        technologies='ASP.NET Core, .NET e C#'
+        technologies='ASP.NET Core, .NET, C#, ReactJS e Electron(node)'
       >
-        O VistoriaPro é um software de gestão para empresas de vistoria
-        e inspeção veicular, desenvolvido para automatizar todo processo,
-        desde a ordem de serviço, até a emissão do laudo. Possui relatórios
-        detalhados, que podem ser acessados via web, pela área administrativa
-        do sistema. Simples e intuitivo, o sistema auxilia em todas as
-        atividades, garantindo que o fluxo de vistoria e inspeção seja feito
-        com maior agilidade e segurança.
+        A plataforma é um software de gestão para empresas de vistoria e inspeção
+        veicular, desenvolvido para automatizar todo processo, desde a ordem de
+        serviço, até a emissão do laudo. O software possui, gestão de ordem de serviço,
+        gestão de agendamentos, gestão de documentos, gestão de fotos e gestão de
+        laudos, além disso também oferece uma variedade de relatórios e análises que
+        ajudam as empresas a entender como o processo de vistoria e inspeção veicular
+        está sendo realizado.
       </Project>
     </div>
   )
