@@ -1,22 +1,17 @@
 @import '../../styles/colors';
 @import '../../styles/media';
 
-.block {
-  padding: 2rem;
-  position: relative;
+.border {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4A27CC, #4C96D4) border-box;
+}
 
-  &::before {
-    inset: 0;
-    content: "";
-    padding: 6px;
-    position: absolute;
-    border-radius: 5px;
-    background: linear-gradient(90deg, #4A27CC, #4C96D4) border-box;
-    -webkit-mask-composite: xor;
-    -webkit-mask:
-      linear-gradient(#fff 0 0),
-      linear-gradient(#fff 0 0) content-box;
-  }
+.block {
+  margin: 0.6rem;
+  padding: 1.2rem;
+  border-radius: 5px;
+  background-color: $primary;
+
 
   &__text {
     color: $comet;
