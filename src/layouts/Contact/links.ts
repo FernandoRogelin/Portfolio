@@ -1,28 +1,28 @@
-import { BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsSteam, BsTwitter } from "react-icons/bs"
+import Icons from "react-icons/bs"
 
 export default [
   {
     link: 'https://www.linkedin.com/in/fernando-rogelin/',
-    icon: BsLinkedin
+    icon: Icons.BsLinkedin
   },
   {
     link: 'https://github.com/fernandorogelin',
-    icon: BsGithub
+    icon: Icons.BsGithub
   },
   {
     link: 'https://twitter.com/RogelinFernando',
-    icon: BsTwitter
+    icon: Icons.BsTwitter
   },
   {
     link: 'https://www.instagram.com/fernando_rogelin/',
-    icon: BsInstagram
+    icon: Icons.BsInstagram
   },
   {
     link: 'https://www.facebook.com/fernando.rogelin',
-    icon: BsFacebook
+    icon: Icons.BsFacebook
   },
   {
     link: 'https://steamcommunity.com/profiles/76561198011701372/',
-    icon: BsSteam
+    icon: Icons.BsSteam
   }
 ]
