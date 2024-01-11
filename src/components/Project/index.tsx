@@ -18,10 +18,7 @@ const Project = ({ invert = false, title, technologies, photo, children }: Proje
 
       <div className='picture'>
         <div className='picture__frame' />
-        <div
-          className='picture__photo'
-          style={{ backgroundImage: `url(src/assets/images/${photo})` }}
-        />
+        <img className='picture__photo' src={`src/assets/images/${photo}`} alt='fotos empresas' />
       </div>
     </div>
   )
