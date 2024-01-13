@@ -1,82 +1,103 @@
+import react from '/src/assets/icons/React-icon.svg'
+import vue from '/src/assets/icons/vue-js.png'
+import next from '/src/assets/icons/next.png'
+import angular from '/src/assets/icons/angular.png'
+import typescript from '/src/assets/icons/typescript.png'
+import jest from '/src/assets/icons/jest.png'
+import cypress from '/src/assets/icons/cypress.svg'
+import vitest from '/src/assets/icons/vitest.png'
+import jenkins from '/src/assets/icons/jenkins.png'
+import github from '/src/assets/icons/github-actions.png'
+import aws from '/src/assets/icons/aws.png'
+import webpack from '/src/assets/icons/webpack.png'
+import vite from '/src/assets/icons/vite.png'
+import babel from '/src/assets/icons/babel.png'
+import eslint from '/src/assets/icons/eslint.png'
+import prettier from '/src/assets/icons/prettier.png'
+import git from '/src/assets/icons/git.png'
+import storybook from '/src/assets/icons/storybook.png'
+import c from '/src/assets/icons/c.png'
+import node from '/src/assets/icons/node.png'
+
 export default [
   {
     title: 'React',
-    path: 'React-icon.svg'
+    path: react.src
   },
   {
     title: 'Vue',
-    path: 'vue-js.png'
+    path: vue.src
   },
   {
     title: 'Next',
-    path: 'next.png'
+    path: next.src
   },
   {
     title: 'Angular',
-    path: 'angular.png'
+    path: angular.src
   },
   {
     title: 'TypeScript',
-    path: 'typescript.png'
+    path: typescript.src
   },
   {
     title: 'Jest',
-    path: 'jest.png'
+    path: jest.src
   },
   {
     title: 'Cypress',
-    path: 'cypress.svg'
+    path: cypress.src
   },
   {
     title: 'Vitest',
-    path: 'vitest.png'
+    path: vitest.src
   },
   {
     title: 'Jenkins',
-    path: 'jenkins.png'
+    path: jenkins.src
   },
   {
     title: 'GitHub Actions',
-    path: 'github-actions.png'
+    path: github.src
   },
   {
     title: 'AWS',
-    path: 'aws.png'
+    path: aws.src
   },
   {
     title: 'Webpack',
-    path: 'webpack.png'
+    path: webpack.src
   },
   {
     title: 'Vite',
-    path: 'vite.png'
+    path: vite.src
   },
   {
     title: 'Babel',
-    path: 'babel.png'
+    path: babel.src
   },
   {
     title: 'ESLint',
-    path: 'eslint.png'
+    path: eslint.src
   },
   {
     title: 'Prettier',
-    path: 'prettier.png'
+    path: prettier.src
   },
   {
     title: 'Git',
-    path: 'git.png'
+    path: git.src
   },
   {
     title: 'Storybook',
-    path: 'storybook.png'
+    path: storybook.src
   },
   {
     title: 'C#',
-    path: 'c.png'
+    path: c.src
   },
   {
     title: 'NodeJS',
-    path: 'node.png'
+    path: node.src
   }
 ]

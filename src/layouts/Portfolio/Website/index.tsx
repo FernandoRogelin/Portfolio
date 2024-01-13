@@ -2,11 +2,14 @@ import './styles.scss';
 import { memo } from 'react'
 
 import Project from 'components/Project';
+import LestePhoto from '/src/assets/images/leste.png'
+import DeskbeePhoto from '/src/assets/images/deskbee.png'
+import PortfolioPhoto from '/src/assets/images/portfolio.png'
 
 const Website = () => (
   <div className='website'>
     <Project
-      photo='leste.png'
+      photo={LestePhoto.src}
       title='Plataforma de investimentos website'
       technologies='React, Gatsby, Vitest, Clean Arquitecture, TypeScript, Styled-components e i18n'
     >
@@ -21,8 +24,8 @@ const Website = () => (
 
     <Project
       invert
+      photo={DeskbeePhoto.src}
       title='Plataforma de gerenciamento trabalho híbrido'
-      photo='deskbee.png'
       technologies='Vue, PWA, i18n, Testes, Atomic Design, CSS (BEM), TypeScript, Storybook e Quasar'
     >
       É uma plataforma de gerenciamento de espaços de trabalho e trabalho híbrido que
@@ -34,7 +37,7 @@ const Website = () => (
     </Project>
 
     <Project
-      photo='portfolio.png'
+      photo={PortfolioPhoto.src}
       title='Fernando Portfolio'
       technologies='Astro, React, TypeScript, CSS (BEM) e i18n'
     >

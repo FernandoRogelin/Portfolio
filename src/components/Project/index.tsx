@@ -18,7 +18,7 @@ const Project = ({ invert = false, title, technologies, photo, children }: Proje
 
       <div className='picture'>
         <div className='picture__frame' />
-        <img className='picture__photo' src={`src/assets/images/${photo}`} alt='fotos empresas' />
+        <img className='picture__photo' src={photo} alt='fotos empresas' />
       </div>
     </div>
   )

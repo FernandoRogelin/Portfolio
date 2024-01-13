@@ -2,13 +2,14 @@ import './styles.scss';
 import { memo } from 'react'
 
 import Project from 'components/Project';
+import VistoriaPhoto from '/src/assets/images/vistoriapro.png'
 
 const Desktop = () => {
   return (
     <div className='desktop'>
       <Project
+        photo={VistoriaPhoto.src}
         title='Plataforma de gestão para empresas de vistoria'
-        photo='vistoriapro.png'
         technologies='ASP.NET Core, .NET, C#, ReactJS e Electron(node)'
       >
         A plataforma é um software de gestão para empresas de vistoria e inspeção
