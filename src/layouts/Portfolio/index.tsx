@@ -22,22 +22,22 @@ const Portfolio = () => {
       <h1 className='portfolio__title'>Portfolio</h1>
 
       <div className='screens'>
-        <p
+        <button
           onClick={() => setScreens(EScreens.website)}
           className={classNames(
             { 'screens__option': true, selected: screens === EScreens.website }
           )}
         >
           Website
-        </p>
-        <p
+        </button>
+        <button
           onClick={() => setScreens(EScreens.desktop)}
           className={classNames(
             { 'screens__option': true, selected: screens === EScreens.desktop }
           )}
         >
           Desktop
-        </p>
+        </button>
       </div>
 
       <div>{showScreens()}</div>

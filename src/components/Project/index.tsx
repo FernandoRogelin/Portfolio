@@ -12,7 +12,7 @@ const Project = ({ invert = false, title, technologies, photo, children }: Proje
         <p className='information__text'>{children}</p>
 
         {technologies && <p className='information__technologies'>
-          Neste projeto foi usado: <span className='information__frameworks'>{technologies}</span>
+          Tecnologias: <span className='information__frameworks'>{technologies}</span>
         </p>}
       </div>
 

@@ -17,7 +17,7 @@ const AboutMe = () => {
         <p className='aboutme__text'>
           Sou apaixonado pela área de Front (as vezes estudo um pouco Back-end também), então costumo estudar
           bastante sobre e sempre se atualizando sobre as novidades que estão surgindo. Já fiz projetos de
-          Internet Banking, Painel administrativos, Portfolio de Investimentos, entra vários outros.
+          Internet Banking, Painel administrativos, Portfolio de Investimentos, entre vários outros.
         </p>
         <p className='aboutme__text'>
           No meu tempo livre, gosto bastante de sair com os meus amigos e minha família para conversar, trocar
