@@ -2,17 +2,25 @@ import { useState, useEffect } from 'react'
 import './style.scss'
 
 import options from './options';
-import { Link, animateScroll } from 'react-scroll'
+import Logo from '../../assets/images/logo-preview.png';
+
 import classNames from 'classnames';
 import Button from 'components/Button';
-import Logo from '../../assets/images/logo-preview.png';
+import { IoLanguage } from "react-icons/io5";
+import { Link, animateScroll } from 'react-scroll'
 
 export default function Menu() {
   const [scroll, setScroll] = useState(false)
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false)
+  const [selectedLanguage, setSelectedLanguage] = useState(window.location.pathname.replace('/', ''))
 
   function listenScrollEvent() {
     window.scrollY < 20 ? setScroll(false) : setScroll(true)
+  }
+
+  function changeScreen(language: string) {
+    setSelectedLanguage(language)
+    window.location.href = language
   }
 
   useEffect(() => {
@@ -38,6 +46,23 @@ export default function Menu() {
               <li className="list__item">{option.name}</li>
             </Link>
           )}
+
+          <div className='list__separator' />
+
+          <div className="languages">
+            <IoLanguage size={14} />
+
+            <select
+              className="languages__select"
+              value={selectedLanguage}
+              onChange={e => changeScreen(e.target.value)}
+            >
+              <option value="en">English</option>
+
+              <option value="pt">Português</option>
+            </select>
+          </div>
+
           <Link to='contact' smooth offset={-100}>
             <li>
               <Button uppercase>Contato</Button>

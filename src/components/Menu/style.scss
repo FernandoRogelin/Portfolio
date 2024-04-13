@@ -58,6 +58,24 @@
   }
 }
 
+.languages {
+  display: flex;
+  align-items: center;
+
+  &__select {
+    border: none;
+    color: $white;
+    cursor: pointer;
+    padding: 1rem 1.4rem;
+    background-color: $primary;
+  }
+
+  & > svg {
+    color: $white;
+    position: absolute;
+  }
+}
+
 .list {
   display: none;
   column-gap: 3rem;
@@ -77,6 +95,12 @@
     &:hover {
       color: $shakespeare;
     }
+  }
+
+  &__separator {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(84, 84, 84, .48);
   }
 }
 
