@@ -57,9 +57,9 @@ export default function Menu() {
               value={selectedLanguage}
               onChange={e => changeScreen(e.target.value)}
             >
-              <option value="en" className="languages__option">English</option>
+              <option value="en/" className="languages__option">English</option>
 
-              <option value="pt" className="languages__option">Português</option>
+              <option value="pt/" className="languages__option">Português</option>
             </select>
           </div>
 
