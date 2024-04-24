@@ -20,7 +20,7 @@ export default function Menu() {
 
   function changeScreen(language: string) {
     setSelectedLanguage(language)
-    window.location.href = language
+    window.location.href = `${window.location.origin}/${language}`
   }
 
   useEffect(() => {
@@ -57,9 +57,9 @@ export default function Menu() {
               value={selectedLanguage}
               onChange={e => changeScreen(e.target.value)}
             >
-              <option value="en">English</option>
+              <option value="en" className="languages__option">English</option>
 
-              <option value="pt">Português</option>
+              <option value="pt" className="languages__option">Português</option>
             </select>
           </div>
 

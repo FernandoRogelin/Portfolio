@@ -67,6 +67,10 @@
     color: $white;
     cursor: pointer;
     padding: 1rem 1.4rem;
+    background-color: transparent;
+  }
+
+  &__option {
     background-color: $primary;
   }
 
