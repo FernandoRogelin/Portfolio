@@ -6,8 +6,17 @@ import Website from './Website';
 import Desktop from './Desktop';
 import { type Screens, EScreens } from './types';
 
-const Portfolio = () => {
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
+
+type PortfolioProps = {
+  url: URL
+}
+
+const Portfolio = ({ url }: PortfolioProps) => {
   const [screens, setScreens] = useState<Screens>('website');
+
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
 
   function showScreens() {
     const components = {
@@ -19,7 +28,7 @@ const Portfolio = () => {
 
   return (
     <div className='portfolio' id='nav.portfolio'>
-      <h1 className='portfolio__title'>Portfolio</h1>
+      <h1 className='portfolio__title'>{ t('nav.portfolio') }</h1>
 
       <div className='screens'>
         <button

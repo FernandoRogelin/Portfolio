@@ -55,7 +55,7 @@ export default function Menu() {
 
           <div className='list__separator' />
 
-          {/* <div className="languages">
+          <div className="languages">
             <IoLanguage size={14} />
 
             <select
@@ -67,7 +67,7 @@ export default function Menu() {
 
               <option value="pt/" className="languages__option">Português</option>
             </select>
-          </div> */}
+          </div>
 
           <Link to='contact' smooth offset={-100}>
             <li>

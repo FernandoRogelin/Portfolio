@@ -2,10 +2,19 @@ import './styles.scss';
 
 import logos from './logos.ts'
 
-const Experience = () => {
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
+
+type ExperienceProps = {
+  url: URL
+}
+
+const Experience = ({ url }: ExperienceProps) => {
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
+
   return (
     <div className='experience' id='nav.experience'>
-      <h1 className='services__title'>Experiências</h1>
+      <h1 className='services__title'>{ t('nav.experience') }</h1>
 
       <div className='wrapperIcons'>
         {logos.map((logo, index) => (

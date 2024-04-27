@@ -5,11 +5,20 @@ import { CiLocationOn } from 'react-icons/ci'
 import { MdOutlineMail } from 'react-icons/md'
 import Logo from '../../assets/images/logo-preview.png';
 
-const Contact = () => {
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
+
+type ContactProps = {
+  url: URL
+}
+
+const Contact = ({ url }: ContactProps) => {
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
+
   return (
     <div className='wrapperContact' id='nav.contact'>
       <div className='contact'>
-        <h1 className='contact__title'>Contato</h1>
+        <h1 className='contact__title'>{ t('nav.contact') }</h1>
 
         <h2 className='contact__drop'>Deixe uma mensagem</h2>
         <p className='contact__text'>

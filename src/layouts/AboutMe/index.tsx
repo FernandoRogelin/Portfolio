@@ -1,6 +1,15 @@
 import './styles.scss';
 
-const AboutMe = () => {
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
+
+type AboutMeProps = {
+  url: URL
+}
+
+const AboutMe = ({ url }: AboutMeProps) => {
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
+
   return (
     <div className='about' id='nav.me'>
       <div className='perfil'>
@@ -8,7 +17,7 @@ const AboutMe = () => {
         <div className='perfil__frame' />
       </div>
       <div className='aboutme'>
-        <h3 className='aboutme__title'>Sobre mim</h3>
+        <h3 className='aboutme__title'>{t('nav.me')}</h3>
         <p className='aboutme__text'>
           Meu nome é Fernando Rogelin, sou desenvolvedor front-end 6+ anos, desde que comecei na área
           de desenvolvimento eu atuo nessa área, atualmente estou morando em Guaíba - RS, uma cidade ao lado
@@ -25,19 +34,19 @@ const AboutMe = () => {
         </p>
         <div className='details'>
           <label className='details__label'>
-            Idade:
+            { t('det.age') }:
             <span className='details__span'>26</span>
           </label>
           <label className='details__label'>
-            Endereço:
+            { t('det.address') }:
             <span className='details__span'>Porto Alegre/RS</span>
           </label>
           <label className='details__label'>
-            Experiência:
-            <span className='details__span'>6 Anos</span>
+            { t('det.experience') }:
+            <span className='details__span'>6 { t('det.years') }</span>
           </label>
           <label className='details__label'>
-            Cargo:
+            { t('det.position') }:
             <span className='details__span'>Front-end Engineer</span>
           </label>
         </div>
