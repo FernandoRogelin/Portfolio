@@ -7,7 +7,7 @@ import Logo from '../../assets/images/logo-preview.png';
 
 const Contact = () => {
   return (
-    <div className='wrapperContact' id='Contato'>
+    <div className='wrapperContact' id='nav.contact'>
       <div className='contact'>
         <h1 className='contact__title'>Contato</h1>
 

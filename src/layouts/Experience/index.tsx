@@ -4,7 +4,7 @@ import logos from './logos.ts'
 
 const Experience = () => {
   return (
-    <div className='experience' id='Experiências'>
+    <div className='experience' id='nav.experience'>
       <h1 className='services__title'>Experiências</h1>
 
       <div className='wrapperIcons'>

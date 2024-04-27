@@ -2,7 +2,7 @@ import './styles.scss';
 
 const AboutMe = () => {
   return (
-    <div className='about' id='Sobre mim'>
+    <div className='about' id='nav.me'>
       <div className='perfil'>
         <div className='perfil__photo' />
         <div className='perfil__frame' />

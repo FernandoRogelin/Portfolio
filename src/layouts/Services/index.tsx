@@ -5,7 +5,7 @@ import { RiComputerLine, RiCodeSSlashLine } from 'react-icons/ri'
 
 const Services = () => {
   return (
-    <div className='services' id='Serviços'>
+    <div className='services' id='nav.services'>
       <h1 className='services__title'>Serviços</h1>
 
       <div className='development'>

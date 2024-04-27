@@ -1,18 +1,24 @@
 import { useState, useEffect } from 'react'
 import './style.scss'
 
-import options from './options';
-import Logo from '../../assets/images/logo-preview.png';
+import options from './options'
+import { languages } from 'i18n/ui'
+import Button from 'components/Button'
+import { useTranslations } from 'i18n/utils'
+import Logo from '../../assets/images/logo-preview.png'
 
-import classNames from 'classnames';
-import Button from 'components/Button';
-import { IoLanguage } from "react-icons/io5";
+import classNames from 'classnames'
+import { IoLanguage } from "react-icons/io5"
 import { Link, animateScroll } from 'react-scroll'
+
 
 export default function Menu() {
   const [scroll, setScroll] = useState(false)
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false)
   const [selectedLanguage, setSelectedLanguage] = useState(window.location.pathname.replace('/', ''))
+
+  const pathname = window.location.pathname.replaceAll('/', '') as keyof typeof languages
+  const t = useTranslations(pathname)
 
   function listenScrollEvent() {
     window.scrollY < 20 ? setScroll(false) : setScroll(true)
@@ -43,7 +49,7 @@ export default function Menu() {
         <ul className="list">
           {options.map((option, index) =>
             <Link key={index} to={option.name} smooth offset={-100}>
-              <li className="list__item">{option.name}</li>
+              <li className="list__item">{t(option.name)}</li>
             </Link>
           )}
 
@@ -65,7 +71,7 @@ export default function Menu() {
 
           <Link to='contact' smooth offset={-100}>
             <li>
-              <Button uppercase>Contato</Button>
+              <Button uppercase>{t('nav.contact')}</Button>
             </li>
           </Link>
         </ul>
