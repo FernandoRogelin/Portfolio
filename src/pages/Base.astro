@@ -25,17 +25,17 @@ const lang = getLangFromUrl(Astro.url)
 	</head>
 	<body>
 		<main>
-      <Menu client:only />
+      <Menu client:only="react" />
 
       <div class="wrapper">
         <Header client:visible />
-        <AboutMe client:visible />
-        <Portfolio client:visible />
-        <Services client:visible />
-        <Experience client:visible />
+        <AboutMe client:visible url={Astro.url} />
+        <Portfolio client:visible url={Astro.url} />
+        <Services client:visible url={Astro.url} />
+        <Experience client:visible url={Astro.url} />
       </div>
 
-      <Contact client:visible />
+      <Contact client:visible url={Astro.url} />
 		</main>
 	</body>
 </html>

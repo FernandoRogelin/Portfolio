@@ -1,14 +1,14 @@
 export default [
   {
-    name: 'Sobre mim'
+    name: 'nav.me'
   },
   {
-    name: 'Portfolio'
+    name: 'nav.portfolio'
   },
   {
-    name: 'Serviços'
+    name: 'nav.services'
   },
   {
-    name: 'Experiências'
+    name: 'nav.experience'
   },
-]
+] as const

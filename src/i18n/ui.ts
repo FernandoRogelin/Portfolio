@@ -1,3 +1,6 @@
+import en from "./en"
+import pt from "./pt"
+
 export const languages = {
   en: 'English',
   pt: 'Portuguese'
@@ -5,11 +8,4 @@ export const languages = {
 
 export const defaultLang = 'en'
 
-export const ui = {
-  en: {
-    'nav.me': 'About me'
-  },
-  pt: {
-    'nav.me': 'Sobre mim'
-  }
-} as const
+export const ui = { en, pt } as const

@@ -1,43 +1,50 @@
 import './styles.scss';
 
-const AboutMe = () => {
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
+
+type AboutMeProps = {
+  url: URL
+}
+
+const AboutMe = ({ url }: AboutMeProps) => {
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
+
   return (
-    <div className='about' id='Sobre mim'>
+    <div className='about' id='nav.me'>
       <div className='perfil'>
         <div className='perfil__photo' />
         <div className='perfil__frame' />
       </div>
       <div className='aboutme'>
-        <h3 className='aboutme__title'>Sobre mim</h3>
+        <h3 className='aboutme__title'>{t('nav.me')}</h3>
         <p className='aboutme__text'>
-          Meu nome é Fernando Rogelin, sou desenvolvedor front-end 6+ anos, desde que comecei na área
-          de desenvolvimento eu atuo nessa área, atualmente estou morando em Guaíba - RS, uma cidade ao lado
-          de Porto Alegre.
+          { t('con.name') }
         </p>
         <p className='aboutme__text'>
-          Sou apaixonado pela área de Front (as vezes estudo um pouco Back-end também), então costumo estudar
-          bastante sobre e sempre se atualizando sobre as novidades que estão surgindo. Já fiz projetos de
-          Internet Banking, Painel administrativos, Portfolio de Investimentos, entre vários outros.
+          { t('con.place') }
         </p>
         <p className='aboutme__text'>
-          No meu tempo livre, gosto bastante de sair com os meus amigos e minha família para conversar, trocar
-          uma idéia, também gosto bastante de praticar esporte, adoro ir na academia e jogar futebol.
+          { t('con.love') }
+        </p>
+        <p className='aboutme__text'>
+          { t('con.freetime') }
         </p>
         <div className='details'>
           <label className='details__label'>
-            Idade:
-            <span className='details__span'>26</span>
+            { t('det.age') }:
+            <span className='details__span'>27</span>
           </label>
           <label className='details__label'>
-            Endereço:
+            { t('det.address') }:
             <span className='details__span'>Porto Alegre/RS</span>
           </label>
           <label className='details__label'>
-            Experiência:
-            <span className='details__span'>6 Anos</span>
+            { t('det.experience') }:
+            <span className='details__span'>6 { t('det.years') }</span>
           </label>
           <label className='details__label'>
-            Cargo:
+            { t('det.position') }:
             <span className='details__span'>Front-end Engineer</span>
           </label>
         </div>

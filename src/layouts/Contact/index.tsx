@@ -5,17 +5,24 @@ import { CiLocationOn } from 'react-icons/ci'
 import { MdOutlineMail } from 'react-icons/md'
 import Logo from '../../assets/images/logo-preview.png';
 
-const Contact = () => {
-  return (
-    <div className='wrapperContact' id='Contato'>
-      <div className='contact'>
-        <h1 className='contact__title'>Contato</h1>
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
 
-        <h2 className='contact__drop'>Deixe uma mensagem</h2>
+type ContactProps = {
+  url: URL
+}
+
+const Contact = ({ url }: ContactProps) => {
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
+
+  return (
+    <div className='wrapperContact' id='nav.contact'>
+      <div className='contact'>
+        <h1 className='contact__title'>{ t('nav.contact') }</h1>
+
+        <h2 className='contact__drop'>{ t('con.message') }</h2>
         <p className='contact__text'>
-          Se gostou do meu trabalho e quer entrar em contato comigo,
-          mande um e-mail para mim que assim que possível eu irei responder e
-          marcamos uma call para conversar.
+          { t('con.info') }
         </p>
 
         <div>
