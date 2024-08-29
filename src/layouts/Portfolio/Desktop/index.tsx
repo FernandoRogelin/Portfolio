@@ -1,10 +1,19 @@
 import './styles.scss';
 import { memo } from 'react'
 
-import Project from 'components/Project';
+import type { languages } from 'i18n/ui'
+import { useTranslations } from 'i18n/utils'
+
+import Project from 'components/Project'
 import VistoriaPhoto from '/src/assets/images/vistoriapro.png'
 
-const Desktop = () => {
+type DesktopProps = {
+  url: URL
+}
+
+const Desktop = ({ url }: DesktopProps) => {
+  const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
+
   return (
     <div className='desktop'>
       <Project
@@ -12,13 +21,7 @@ const Desktop = () => {
         title='Plataforma de gestão para empresas de vistoria'
         technologies='ASP.NET Core, .NET, C#, ReactJS e Electron(node)'
       >
-        A plataforma é um software de gestão para empresas de vistoria e inspeção
-        veicular, desenvolvido para automatizar todo processo, desde a ordem de
-        serviço, até a emissão do laudo. O software possui, gestão de ordem de serviço,
-        gestão de agendamentos, gestão de documentos, gestão de fotos e gestão de
-        laudos, além disso também oferece uma variedade de relatórios e análises que
-        ajudam as empresas a entender como o processo de vistoria e inspeção veicular
-        está sendo realizado.
+        { t('vistoria.text') }
       </Project>
     </div>
   )

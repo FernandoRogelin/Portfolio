@@ -19,14 +19,10 @@ const Services = ({ url }: ServicesProps) => {
 
       <div className='development'>
         <Block title='Website' icon={RiCodeSSlashLine}>
-          É uma coleção de páginas da Web organizadas e localizadas em um
-          servidor na rede. Um website pode tratar de diversos assunstos e
-          disponibilizam as informações em forma de conteúdo de texto e mídia.
+          { t('website.text') }
         </Block>
         <Block title='Desktop app' icon={RiComputerLine}>
-          Aplicativos desktop são aplicações que são instaladas e, em sua maioria,
-          roda no computador desktop ou laptop. Também são aplicações que podem ser
-          executadas em dispositivos portáteis como telefones, tablets e outros.
+          { t('desktop.text') }
         </Block>
       </div>
     </div>

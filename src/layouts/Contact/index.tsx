@@ -20,11 +20,9 @@ const Contact = ({ url }: ContactProps) => {
       <div className='contact'>
         <h1 className='contact__title'>{ t('nav.contact') }</h1>
 
-        <h2 className='contact__drop'>Deixe uma mensagem</h2>
+        <h2 className='contact__drop'>{ t('con.message') }</h2>
         <p className='contact__text'>
-          Se gostou do meu trabalho e quer entrar em contato comigo,
-          mande um e-mail para mim que assim que possível eu irei responder e
-          marcamos uma call para conversar.
+          { t('con.info') }
         </p>
 
         <div>

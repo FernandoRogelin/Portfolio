@@ -19,23 +19,21 @@ const AboutMe = ({ url }: AboutMeProps) => {
       <div className='aboutme'>
         <h3 className='aboutme__title'>{t('nav.me')}</h3>
         <p className='aboutme__text'>
-          Meu nome é Fernando Rogelin, sou desenvolvedor front-end 6+ anos, desde que comecei na área
-          de desenvolvimento eu atuo nessa área, atualmente estou morando em Guaíba - RS, uma cidade ao lado
-          de Porto Alegre.
+          { t('con.name') }
         </p>
         <p className='aboutme__text'>
-          Sou apaixonado pela área de Front (as vezes estudo um pouco Back-end também), então costumo estudar
-          bastante sobre e sempre se atualizando sobre as novidades que estão surgindo. Já fiz projetos de
-          Internet Banking, Painel administrativos, Portfolio de Investimentos, entre vários outros.
+          { t('con.place') }
         </p>
         <p className='aboutme__text'>
-          No meu tempo livre, gosto bastante de sair com os meus amigos e minha família para conversar, trocar
-          uma idéia, também gosto bastante de praticar esporte, adoro ir na academia e jogar futebol.
+          { t('con.love') }
+        </p>
+        <p className='aboutme__text'>
+          { t('con.freetime') }
         </p>
         <div className='details'>
           <label className='details__label'>
             { t('det.age') }:
-            <span className='details__span'>26</span>
+            <span className='details__span'>27</span>
           </label>
           <label className='details__label'>
             { t('det.address') }:

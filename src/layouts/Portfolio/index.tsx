@@ -20,8 +20,8 @@ const Portfolio = ({ url }: PortfolioProps) => {
 
   function showScreens() {
     const components = {
-      [EScreens.website]: <Website />,
-      [EScreens.desktop]: <Desktop />
+      [EScreens.website]: <Website url={url} />,
+      [EScreens.desktop]: <Desktop url={url} />
     }
     return components[screens]
   }
