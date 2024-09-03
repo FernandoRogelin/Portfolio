@@ -5,8 +5,8 @@ import type { languages } from 'i18n/ui'
 import { useTranslations } from 'i18n/utils'
 
 import Project from 'components/Project'
-import LestePhoto from '/src/assets/images/leste.png'
-import DeskbeePhoto from '/src/assets/images/deskbee.png'
+import Project2 from '/src/assets/images/project-2.png'
+import Project1 from '/src/assets/images/project-1.png'
 import PortfolioPhoto from '/src/assets/images/portfolio.png'
 
 
@@ -20,7 +20,7 @@ const Website = ({ url }: WebsiteProps) => {
   return (
     <div className='website'>
       <Project
-        photo={LestePhoto.src}
+        photo={Project2.src}
         title='Plataforma de investimentos website'
         technologies='React, Gatsby, Vitest, Clean Arquitecture, TypeScript, Styled-components, i18n'
       >
@@ -29,7 +29,7 @@ const Website = ({ url }: WebsiteProps) => {
 
       <Project
         invert
-        photo={DeskbeePhoto.src}
+        photo={Project1.src}
         title='Plataforma de gerenciamento trabalho híbrido'
         technologies='Vue, PWA, i18n, Testes, Atomic Design, CSS (BEM), TypeScript, Storybook, Quasar'
       >
