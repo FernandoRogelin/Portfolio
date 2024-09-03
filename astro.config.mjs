@@ -5,4 +5,11 @@ import react from '@astrojs/react';
 export default defineConfig({
 	// Enable React to support React JSX components.
 	integrations: [react()],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt'],
+    routing: {
+      prefixDefaultLocale: true
+    }
+  }
 });
