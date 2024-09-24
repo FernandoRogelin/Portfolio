@@ -32,7 +32,7 @@
   }
 
   &__text {
-    color: #8386ED;
+    color: $white;
     max-width: 50rem;
     font-size: 1.4rem;
     margin-bottom: 2rem;
@@ -70,14 +70,13 @@
 
 .footer {
   display: flex;
+  padding: 2rem 0;
   margin-top: 3rem;
   position: relative;
-  padding: 8rem 0 2rem;
   justify-content: center;
   border-top: 1px solid $white;
 
   @include devices() {
-    padding: 2rem 0;
     justify-content: flex-end;
   }
 
@@ -86,7 +85,12 @@
     top: 12px;
     width: 6rem;
     height: 6rem;
+    display: none;
     position: absolute;
+
+    @include devices() {
+      display: block;
+    }
   }
 }
 

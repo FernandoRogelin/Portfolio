@@ -47,6 +47,25 @@ export default function Menu() {
           className="menu__logo"
           onClick={() => animateScroll.scrollToTop()}
         />
+
+        <div className="languages languages--mobile">
+          <IoLanguage size={14} />
+
+          <select
+            className="languages__select"
+            value={selectedLanguage}
+            onChange={e => changeScreen(e.target.value)}
+          >
+            <option value="en/" className="languages__option">
+              English
+            </option>
+
+            <option value="pt/" className="languages__option">
+              Português
+            </option>
+          </select>
+        </div>
+
         <ul className="list">
           {options.map((option, index) => (
             <Link key={index} to={option.name} smooth offset={-100}>
@@ -94,7 +113,7 @@ export default function Menu() {
               to={option.name}
               onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
             >
-              <li className="listMobile__item">{option.name}</li>
+              <li className="listMobile__item">{t(option.name)}</li>
             </Link>
           ))}
           <Link

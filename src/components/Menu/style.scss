@@ -23,16 +23,13 @@
   max-width: 128rem;
   position: relative;
   align-items: center;
-  padding: 1.5rem 4rem;
-  justify-content: flex-end;
+  padding: 1.5rem 3rem;
+  justify-content: space-between;
 
   &__logo {
-    top: 0.5rem;
-    width: 6rem;
-    left: 1.5rem;
-    height: 6rem;
+    width: 5.5rem;
+    height: 5.5rem;
     cursor: pointer;
-    position: absolute;
   }
 
   &__hamburguer {
@@ -78,6 +75,12 @@
     color: $white;
     position: absolute;
   }
+
+  &--mobile {
+    @include devices() {
+      display: none;
+    }
+  }
 }
 
 .list {
@@ -117,8 +120,8 @@
   left: 50%;
   top: 76px;
   width: 90%;
-  padding: 0 2rem;
   position: absolute;
+  padding: 0.8rem 2rem;
   list-style-type: none;
   background-color: #031226;
   transform: translate(-50%, 0);
