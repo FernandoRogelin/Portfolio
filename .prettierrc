@@ -4,5 +4,6 @@
   "arrowParens": "avoid",
   "bracketSpacing": true,
   "printWidth": 100,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "semi": false
 }

@@ -22,82 +22,82 @@ import node from '/src/assets/icons/node.png'
 export default [
   {
     title: 'React',
-    path: react.src
+    path: react.src,
   },
   {
     title: 'Vue',
-    path: vue.src
+    path: vue.src,
   },
   {
     title: 'Next',
-    path: next.src
+    path: next.src,
   },
   {
     title: 'Angular',
-    path: angular.src
+    path: angular.src,
   },
   {
     title: 'TypeScript',
-    path: typescript.src
+    path: typescript.src,
   },
   {
     title: 'Jest',
-    path: jest.src
+    path: jest.src,
   },
   {
     title: 'Cypress',
-    path: cypress.src
+    path: cypress.src,
   },
   {
     title: 'Vitest',
-    path: vitest.src
+    path: vitest.src,
   },
   {
     title: 'Jenkins',
-    path: jenkins.src
+    path: jenkins.src,
   },
   {
     title: 'GitHub Actions',
-    path: github.src
+    path: github.src,
   },
   {
     title: 'AWS',
-    path: aws.src
+    path: aws.src,
   },
   {
     title: 'Webpack',
-    path: webpack.src
+    path: webpack.src,
   },
   {
     title: 'Vite',
-    path: vite.src
+    path: vite.src,
   },
   {
     title: 'Babel',
-    path: babel.src
+    path: babel.src,
   },
   {
     title: 'ESLint',
-    path: eslint.src
+    path: eslint.src,
   },
   {
     title: 'Prettier',
-    path: prettier.src
+    path: prettier.src,
   },
   {
     title: 'Git',
-    path: git.src
+    path: git.src,
   },
   {
     title: 'Storybook',
-    path: storybook.src
+    path: storybook.src,
   },
   {
     title: 'C#',
-    path: c.src
+    path: c.src,
   },
   {
     title: 'NodeJS',
-    path: node.src
-  }
+    path: node.src,
+  },
 ]

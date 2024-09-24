@@ -1,14 +1,14 @@
 export default [
   {
-    name: 'nav.me'
+    name: 'nav.me',
   },
   {
-    name: 'nav.portfolio'
+    name: 'nav.portfolio',
   },
   {
-    name: 'nav.services'
+    name: 'nav.services',
   },
   {
-    name: 'nav.experience'
+    name: 'nav.experience',
   },
 ] as const

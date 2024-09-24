@@ -1,4 +1,4 @@
-import './styles.scss';
+import './styles.scss'
 import { memo } from 'react'
 
 import type { languages } from 'i18n/ui'
@@ -15,13 +15,13 @@ const Desktop = ({ url }: DesktopProps) => {
   const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
 
   return (
-    <div className='desktop'>
+    <div className="desktop">
       <Project
         photo={Project3.src}
-        title='Plataforma de gestão para empresas de vistoria'
-        technologies='ASP.NET Core, .NET, C#, ReactJS e Electron(node)'
+        title="Plataforma de gestão para empresas de vistoria"
+        technologies="ASP.NET Core, .NET, C#, ReactJS e Electron(node)"
       >
-        { t('vistoria.text') }
+        {t('vistoria.text')}
       </Project>
     </div>
   )

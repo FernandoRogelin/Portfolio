@@ -1,4 +1,4 @@
-import './styles.scss';
+import './styles.scss'
 import { memo } from 'react'
 
 import type { languages } from 'i18n/ui'
@@ -9,7 +9,6 @@ import Project2 from '/src/assets/images/project-2.png'
 import Project1 from '/src/assets/images/project-1.png'
 import PortfolioPhoto from '/src/assets/images/portfolio.png'
 
-
 type WebsiteProps = {
   url: URL
 }
@@ -18,34 +17,33 @@ const Website = ({ url }: WebsiteProps) => {
   const t = useTranslations(url.pathname.replaceAll('/', '') as keyof typeof languages)
 
   return (
-    <div className='website'>
+    <div className="website">
       <Project
         photo={Project2.src}
-        title='Plataforma de investimentos website'
-        technologies='React, Gatsby, Vitest, Clean Arquitecture, TypeScript, Styled-components, i18n'
+        title="Plataforma de investimentos website"
+        technologies="React, Gatsby, Vitest, Clean Arquitecture, TypeScript, Styled-components, i18n"
       >
-        { t('leste.text') }
+        {t('leste.text')}
       </Project>
 
       <Project
         invert
         photo={Project1.src}
-        title='Plataforma de gerenciamento trabalho híbrido'
-        technologies='Vue, PWA, i18n, Testes, Atomic Design, CSS (BEM), TypeScript, Storybook, Quasar'
+        title="Plataforma de gerenciamento trabalho híbrido"
+        technologies="Vue, PWA, i18n, Testes, Atomic Design, CSS (BEM), TypeScript, Storybook, Quasar"
       >
-        { t('deskbee.text') }
+        {t('deskbee.text')}
       </Project>
 
       <Project
         photo={PortfolioPhoto.src}
-        title='Fernando Portfolio'
-        technologies='Astro, React, TypeScript, CSS (BEM), i18n'
+        title="Fernando Portfolio"
+        technologies="Astro, React, TypeScript, CSS (BEM), i18n"
       >
-        { t('fernando.portfolio') }
+        {t('fernando.portfolio')}
       </Project>
     </div>
   )
 }
-
 
 export default memo(Website)
