@@ -3,13 +3,13 @@ import './style.scss'
 
 import options from './options'
 import { languages } from 'i18n/ui'
-import Button from 'components/Button'
+import ButtonComponent from 'components/Button'
 import { useTranslations } from 'i18n/utils'
 import Logo from '../../assets/images/logo-preview.png'
 
 import classNames from 'classnames'
 import { IoLanguage } from 'react-icons/io5'
-import { Link, animateScroll } from 'react-scroll'
+import { Button, animateScroll } from 'react-scroll'
 
 export default function Menu() {
   const [scroll, setScroll] = useState(false)
@@ -68,9 +68,9 @@ export default function Menu() {
 
         <ul className="list">
           {options.map((option, index) => (
-            <Link key={index} to={option.name} smooth offset={-100}>
+            <Button key={index} to={option.name} smooth offset={-100}>
               <li className="list__item">{t(option.name)}</li>
-            </Link>
+            </Button>
           ))}
 
           <div className="list__separator" />
@@ -93,11 +93,11 @@ export default function Menu() {
             </select>
           </div>
 
-          <Link to="contact" smooth offset={-100}>
+          <Button to="contact" smooth offset={-100}>
             <li>
-              <Button uppercase>{t('nav.contact')}</Button>
+              <ButtonComponent uppercase>{t('nav.contact')}</ButtonComponent>
             </li>
-          </Link>
+          </Button>
         </ul>
 
         <div className="menu__hamburguer" onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)} />
@@ -106,7 +106,7 @@ export default function Menu() {
       {isOpenMobileMenu && (
         <ul className="listMobile">
           {options.map((option, index) => (
-            <Link
+            <Button
               smooth
               key={index}
               offset={-100}
@@ -114,20 +114,20 @@ export default function Menu() {
               onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
             >
               <li className="listMobile__item">{t(option.name)}</li>
-            </Link>
+            </Button>
           ))}
-          <Link
+          <Button
             to="contact"
             smooth
             offset={-100}
             onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
           >
             <li className="listMobile__item">
-              <Button uppercase fullWidth>
+              <ButtonComponent uppercase fullWidth>
                 contact
-              </Button>
+              </ButtonComponent>
             </li>
-          </Link>
+          </Button>
         </ul>
       )}
     </header>
