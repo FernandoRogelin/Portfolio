@@ -77,27 +77,31 @@ export default function Menu() {
             </li>
           ))}
 
-          <div className="list__separator" />
+          <li>
+            <div className="list__separator" />
+          </li>
 
-          <div className="languages">
-            <IoLanguage size={14} />
+          <li>
+            <div className="languages">
+              <IoLanguage size={14} />
 
-            <label aria-label="Select">
-              <select
-                className="languages__select"
-                value={selectedLanguage}
-                onChange={e => changeScreen(e.target.value)}
-              >
-                <option value="en/" className="languages__option">
-                  English
-                </option>
+              <label aria-label="Select">
+                <select
+                  className="languages__select"
+                  value={selectedLanguage}
+                  onChange={e => changeScreen(e.target.value)}
+                >
+                  <option value="en/" className="languages__option">
+                    English
+                  </option>
 
-                <option value="pt/" className="languages__option">
-                  Português
-                </option>
-              </select>
-            </label>
-          </div>
+                  <option value="pt/" className="languages__option">
+                    Português
+                  </option>
+                </select>
+              </label>
+            </div>
+          </li>
 
           <li>
             <Button to="contact" smooth offset={-100}>
