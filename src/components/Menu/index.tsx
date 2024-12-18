@@ -51,19 +51,21 @@ export default function Menu() {
         <div className="languages languages--mobile">
           <IoLanguage size={14} />
 
-          <select
-            className="languages__select"
-            value={selectedLanguage}
-            onChange={e => changeScreen(e.target.value)}
-          >
-            <option value="en/" className="languages__option">
-              English
-            </option>
+          <label aria-label="Select">
+            <select
+              className="languages__select"
+              value={selectedLanguage}
+              onChange={e => changeScreen(e.target.value)}
+            >
+              <option value="en/" className="languages__option">
+                English
+              </option>
 
-            <option value="pt/" className="languages__option">
-              Português
-            </option>
-          </select>
+              <option value="pt/" className="languages__option">
+                Português
+              </option>
+            </select>
+          </label>
         </div>
 
         <ul className="list">
@@ -80,19 +82,21 @@ export default function Menu() {
           <div className="languages">
             <IoLanguage size={14} />
 
-            <select
-              className="languages__select"
-              value={selectedLanguage}
-              onChange={e => changeScreen(e.target.value)}
-            >
-              <option value="en/" className="languages__option">
-                English
-              </option>
+            <label aria-label="Select">
+              <select
+                className="languages__select"
+                value={selectedLanguage}
+                onChange={e => changeScreen(e.target.value)}
+              >
+                <option value="en/" className="languages__option">
+                  English
+                </option>
 
-              <option value="pt/" className="languages__option">
-                Português
-              </option>
-            </select>
+                <option value="pt/" className="languages__option">
+                  Português
+                </option>
+              </select>
+            </label>
           </div>
 
           <li>

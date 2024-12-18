@@ -44,8 +44,14 @@ const Contact = ({ url }: ContactProps) => {
           <img className="footer__logo" src={Logo.src} alt="logo" />
 
           <div className="socialNetwork">
-            {links.map(({ link, icon: Icon }, index) => (
-              <a key={index} target="_blank" href={link} rel="noreferrer">
+            {links.map(({ name, link, icon: Icon }, index) => (
+              <a
+                key={index}
+                target="_blank"
+                href={link}
+                rel="noreferrer"
+                aria-label={`${name} ${t('con.ariaLabel')}`}
+              >
                 <div className="info__icon">
                   <Icon size={25} />
                 </div>
