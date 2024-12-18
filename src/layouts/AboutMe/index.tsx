@@ -17,7 +17,7 @@ const AboutMe = ({ url }: AboutMeProps) => {
         <div className="perfil__frame" />
       </div>
       <div className="aboutme">
-        <h3 className="aboutme__title">{t('nav.me')}</h3>
+        <h1 className="aboutme__title">{t('nav.me')}</h1>
         <p className="aboutme__text">{t('con.name')}</p>
         <p className="aboutme__text">{t('con.place')}</p>
         <p className="aboutme__text">{t('con.love')}</p>

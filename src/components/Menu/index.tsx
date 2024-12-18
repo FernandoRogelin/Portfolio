@@ -68,9 +68,11 @@ export default function Menu() {
 
         <ul className="list">
           {options.map((option, index) => (
-            <Button key={index} to={option.name} smooth offset={-100}>
-              <li className="list__item">{t(option.name)}</li>
-            </Button>
+            <li key={index}>
+              <Button className="list__item" to={option.name} smooth offset={-100}>
+                {t(option.name)}
+              </Button>
+            </li>
           ))}
 
           <div className="list__separator" />
@@ -93,11 +95,11 @@ export default function Menu() {
             </select>
           </div>
 
-          <Button to="contact" smooth offset={-100}>
-            <li>
+          <li>
+            <Button to="contact" smooth offset={-100}>
               <ButtonComponent uppercase>{t('nav.contact')}</ButtonComponent>
-            </li>
-          </Button>
+            </Button>
+          </li>
         </ul>
 
         <div className="menu__hamburguer" onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)} />
@@ -106,28 +108,32 @@ export default function Menu() {
       {isOpenMobileMenu && (
         <ul className="listMobile">
           {options.map((option, index) => (
+            <li key={index}>
+              <Button
+                smooth
+                offset={-100}
+                to={option.name}
+                className="listMobile__item"
+                onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
+              >
+                {t(option.name)}
+              </Button>
+            </li>
+          ))}
+
+          <li>
             <Button
+              to="contact"
               smooth
-              key={index}
               offset={-100}
-              to={option.name}
+              className="listMobile__item"
               onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
             >
-              <li className="listMobile__item">{t(option.name)}</li>
-            </Button>
-          ))}
-          <Button
-            to="contact"
-            smooth
-            offset={-100}
-            onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}
-          >
-            <li className="listMobile__item">
               <ButtonComponent uppercase fullWidth>
                 contact
               </ButtonComponent>
-            </li>
-          </Button>
+            </Button>
+          </li>
         </ul>
       )}
     </header>
