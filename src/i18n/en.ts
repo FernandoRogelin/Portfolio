@@ -23,8 +23,10 @@ export default {
     'On my free time I like to do a lot of things, like go out with my friends and my family to talk about anything, practice sports like soccer, padel or just go to the gym with my friends.',
 
   // Website
+  'leste.title': 'Investment platform Website',
   'leste.text':
     'Website was created for one investment company, is a global alternative investment platform, with Brazilian DNA, in this website you can see all information about the company, the team that work on company, how you can enter in contact, his investment strategies and which funds the company invests in. The website is responsive, what means that can be used on smatphones and tablets.',
+  'deskbee.title': 'Hybrid work management platform',
   'deskbee.text':
     'Is a workspace management platform and hybrid work that helps companies of all sizes to optimize their offices and improve their experience of his employees. The platform is a wide range of features, including: booking workspaces, ticket management, event management, guest management, access control, and of course a wide of reports and analysis that help managers to understand how his workspaces is at the moment.',
   'fernando.portfolio':

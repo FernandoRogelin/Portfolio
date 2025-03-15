@@ -23,8 +23,10 @@ export default {
     'No meu tempo livre, gosto bastante de sair com os meus amigos e minha família para conversar, trocar uma idéia, também gosto bastante de praticar esporte, adoro ir na academia e jogar futebol.',
 
   // Website
+  'leste.title': 'Plataforma de investimentos Website',
   'leste.text':
     'Website que foi criado para uma empresa, que é uma plataforma de investimentos alternativos global, com um DNA brasileiro, neste website são mostrados todas as informções referente a empresa, a equipe que trabalha na empresa, como entrar em contato com os mesmos, suas estratégias de investimentos e em quais fundos a empresa investe. O site também é responsivo, o que significa que ele pode ser visualizado em dispositivos móveis e tablets.',
+  'deskbee.title': 'Plataforma de gerenciamento trabalho híbrido',
   'deskbee.text':
     'É uma plataforma de gerenciamento de espaços de trabalho e trabalho híbrido que ajuda empresas de todos os tamanhos a otimizar seus escritórios e melhorar a experiência de seus funcionários. A plataforma oferece uma ampla gama de recursos, incluindo: Reserva de espaços de trabalho, gerenciamento de chamados, gestão de eventos, gestão de convidados, controle de acesso, além de uma gama de reletórios e análises que ajudam os gerentes a entender como os espaços de trabalho estão sendo utilizados.',
   'fernando.portfolio':

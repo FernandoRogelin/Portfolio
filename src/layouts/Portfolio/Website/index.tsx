@@ -20,7 +20,7 @@ const Website = ({ url }: WebsiteProps) => {
     <div className="website">
       <Project
         photo={Project2.src}
-        title="Plataforma de investimentos website"
+        title={t('leste.title')}
         technologies="React, Gatsby, Vitest, Clean Arquitecture, TypeScript, Styled-components, i18n"
       >
         {t('leste.text')}
@@ -29,7 +29,7 @@ const Website = ({ url }: WebsiteProps) => {
       <Project
         invert
         photo={Project1.src}
-        title="Plataforma de gerenciamento trabalho híbrido"
+        title={t('deskbee.title')}
         technologies="Vue, PWA, i18n, Testes, Atomic Design, CSS (BEM), TypeScript, Storybook, Quasar"
       >
         {t('deskbee.text')}
