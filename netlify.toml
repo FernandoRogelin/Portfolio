@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/"
-to = "https://www.fernandorogelin.com/en/"
-status = 200
+to = "/en/"
+status = 301
 force = true
